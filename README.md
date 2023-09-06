@@ -16,7 +16,7 @@ swapping [cuDF](https://docs.rapids.ai/api/cudf) in place of
 [Pandas](https://pandas.pydata.org/), etc. I have also experienced the "ease"
 of optimizing that code by writing custom modules in C/C++.
 
-But I have been hearing a lot about Rust lately, and I am curious to see how
+But I have heard a lot about Rust lately, and I am curious to see how
 well it can play with Python. I am also curious to see how much of a speedup
 I can get by using Rust.
 
