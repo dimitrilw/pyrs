@@ -1,8 +1,30 @@
+[//]: # " cspell:ignore numpy, numba, cudf "
+
 # pyrs
 
 Python (py) + Rust (rs)
 
 This is a learning repo for experimenting with Python and Rust interoperability.
+
+## philosophical note
+
+I really enjoy how easy Python is for rapid prototyping. And when the prototype
+is built, then revising and optimizing can be a real pleasure too.
+Some optimizations are "freebie" changes, such as using [Numpy](https://numpy.org/) for
+vectorized operations, JIT compilation with [Numba](https://numba.pydata.org/),
+swapping [cudf](https://docs.rapids.ai/api/cudf) in place of
+[pandas](https://pandas.pydata.org/), etc. I have also experienced the "ease"
+of optimizing that code by writing custom modules in C/C++.
+
+But I have been hearing a lot about Rust lately, and I am curious to see how
+well it can play with Python. I am also curious to see how much of a speedup
+I can get by using Rust.
+
+Last note: when refactoring Python prototypes, I find that success is really
+dependent on how well the code is structured. Highly modular code with
+clearly defined interfaces tends to be _much_ easier to refactor than
+spaghetti code. Especially when doing cross-language refactoring, such as
+migrating high-cost code from Python to any other language.
 
 ## py_run_rs: using Python to call Rust code
 
