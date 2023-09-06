@@ -45,9 +45,10 @@ The result is a 10.6x speedup for the Fibonacci + GCD function combo -- not bad.
 ![results of running run_both.py script](./static/10.6x_improvement.png "10.6x improvement")
 
 Note: rather standard VS-Code Python extension settings will be unhappy with
-importing a `.so` file.
+importing a `.so` file. Many of us just install the default Python extension,
+which uses fairly standard Pylance configs. And that config is not happy.
 
-![VS-Code Python extension error](./static/vscode-not-happy.png "VS-Code Python extension error")
+![VS-Code Pylance error](./static/vscode-not-happy.png "VS-Code Pylance error")
 
 This happens despite the `.so` files being in the CWD and the Python code
 itself imports them & runs them just fine.
