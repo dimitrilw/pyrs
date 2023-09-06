@@ -59,7 +59,9 @@ adding a `.env` file, editing the VS-Code Pylance settings, etc. And I am not
 demo'ing that here. :wink:
 
 To run this code, first install Rust and Cargo per instructions at
-[rustup](https://rustup.rs/). Then install rustimport:
+[rustup](https://rustup.rs/).
+
+Then install `rustimport`:
 
 ```bash
 pip3 install rustimport
