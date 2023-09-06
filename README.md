@@ -32,4 +32,6 @@ itself imports them & runs them just fine.
 
 ![files are in directory](./static/compiled-so-files-are-in-dir.png "files are in directory")
 
-This can be fixed by adjusting the Python Path.
+There are multiple methods to fix this behavior, such as adjusting the Python Path,
+adding a `.env` file, editing the VS-Code Pylance settings, etc. And I am not
+demo'ing that here. :wink:

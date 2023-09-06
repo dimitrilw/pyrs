@@ -13,6 +13,7 @@
     "pyrs", // this repo
     "rustimport",
     "pyfunction",
+    "pylance",
     // common code/tech terms & short-hand
     "bools",
     "nums",
