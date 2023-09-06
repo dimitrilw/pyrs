@@ -12,8 +12,8 @@ I really enjoy how easy Python is for rapid prototyping. And when the prototype
 is built, then revising and optimizing can be a real pleasure too.
 Some optimizations are "freebie" changes, such as using [Numpy](https://numpy.org/) for
 vectorized operations, JIT compilation with [Numba](https://numba.pydata.org/),
-swapping [cudf](https://docs.rapids.ai/api/cudf) in place of
-[pandas](https://pandas.pydata.org/), etc. I have also experienced the "ease"
+swapping [cuDF](https://docs.rapids.ai/api/cudf) in place of
+[Pandas](https://pandas.pydata.org/), etc. I have also experienced the "ease"
 of optimizing that code by writing custom modules in C/C++.
 
 But I have been hearing a lot about Rust lately, and I am curious to see how
