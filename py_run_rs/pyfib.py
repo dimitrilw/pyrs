@@ -16,12 +16,12 @@ def fib(n: int):
         return 0
     if n == 1:
         return 1
-    pPrev = 0
+    p_prev = 0
     prev = 1
     cur = 1
     for _ in range(n - 1):
-        cur = pPrev + prev
-        pPrev = prev
+        cur = p_prev + prev
+        p_prev = prev
         prev = cur
     return cur
 
