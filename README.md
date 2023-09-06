@@ -59,6 +59,8 @@ There are multiple methods to fix this behavior, such as adjusting the Python Pa
 adding a `.env` file, editing the VS-Code Pylance settings, etc. And I am not
 demo'ing that here. :wink:
 
+### run py_run_rs
+
 To run this code, first install Rust and Cargo per instructions at
 [rustup](https://rustup.rs/).
 
@@ -72,4 +74,25 @@ After that, you can `cd` into the `py_run_rs` directory and run the Python scrip
 
 ```bash
 python3 run_both.py
+```
+
+## rs_run_py: using Rust to interpret Python code
+
+Folder `rs_run_py` contains Python code that is embedded inside Rust via
+[rustpython](https://rustpython.github.io/). A few years ago, I tried
+achieving this via PyO3, but that was not a pleasant experience. My apologies
+to the PyO3 team. I am sure it has improved since then, but I'm giving
+rustpython a try.
+
+Of note: at the time I am writing this, rustpython is at v0.2.0, so it might
+not be fully stable & ready for production. However, there are already some
+rather cool projects using it, as listed on the
+[rustpython github page](https://github.com/RustPython/RustPython#use-cases).
+
+Installation of rustpython is described on the
+[rustpython github page](https://github.com/RustPython/RustPython/tree/main).
+At the time of writing this, the installation is:
+
+```bash
+cargo install --git https://github.com/RustPython/RustPython
 ```
