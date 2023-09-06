@@ -57,3 +57,16 @@ itself imports them & runs them just fine.
 There are multiple methods to fix this behavior, such as adjusting the Python Path,
 adding a `.env` file, editing the VS-Code Pylance settings, etc. And I am not
 demo'ing that here. :wink:
+
+To run this code, first install Rust and Cargo per instructions at
+[rustup](https://rustup.rs/). Then install rustimport:
+
+```bash
+pip3 install rustimport
+```
+
+After that, you can `cd` into the `py_run_rs` directory and run the Python script:
+
+```bash
+python3 run_both.py
+```
