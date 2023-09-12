@@ -96,3 +96,16 @@ At the time of writing this, the installation is:
 ```bash
 cargo install --git https://github.com/RustPython/RustPython
 ```
+
+Of note: this command takes a minute. There are a lot of packages to be downloaded,
+compiled, voodoo magic to be performed, etc. So be patient.
+
+Since I'm messing with a bunch of stuff and this is just a learning/demo repo,
+the file `rs_run_py/basic_py_text.rs` is a [rust-scripts](https://rust-script.org/)
+and can be run directly from the command line:
+
+```bash
+rust-script ./rs_run_py/basic_py_text.rs
+```
+
+![rust-script demo](./static/rust-script.png "rust-script demo")
